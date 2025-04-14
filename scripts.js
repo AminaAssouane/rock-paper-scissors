@@ -1,4 +1,4 @@
-getComputerChoice(){
+function getComputerChoice() {
     const number = Math.floor(Math.random() * 100);
 
     if (number < 33) return "ROCK";
@@ -6,3 +6,4 @@ getComputerChoice(){
     else return "SCISSORS";
 }
 
+console.log(getComputerChoice());
