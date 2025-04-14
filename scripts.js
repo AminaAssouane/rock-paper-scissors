@@ -6,4 +6,7 @@ function getComputerChoice() {
     else return "SCISSORS";
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    let choice = prompt("Enter rock, paper or scissors");
+}
+
