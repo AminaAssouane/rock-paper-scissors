@@ -74,7 +74,16 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame() {
 
-playRound(humanSelection, computerSelection);
+    for (i = 0; i < 5; i++) {
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore) console.log("CONGRATULATIONS! YOU WON!");
+    else console.log("You lost.");
+    humanScore = 0;
+    computerScore = 0;
+}
