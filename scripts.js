@@ -76,7 +76,7 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame() {
 
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();
 
@@ -87,3 +87,5 @@ function playGame() {
     humanScore = 0;
     computerScore = 0;
 }
+
+playGame();
