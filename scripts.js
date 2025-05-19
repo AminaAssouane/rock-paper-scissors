@@ -4,6 +4,8 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissors = document.querySelector("#scissors");
 const result = document.querySelector("#result");
+const score = document.querySelector("#score");
+const final = document.querySelector("#final");
 
 function getComputerChoice() {
   const number = Math.floor(Math.random() * 100);
@@ -73,13 +75,9 @@ function playRound(humanChoice, computerChoice) {
         break;
     }
   }
-}
 
-/*function playGame() {
-  if (humanScore > computerScore) console.log("CONGRATULATIONS! YOU WON!");
-  else console.log("You lost.");
-  humanScore = 0;
-  computerScore = 0;
+  score.textContent = `Your score : ${humanScore}. The computer's score : ${computerScore}.`;
+  if (humanScore === 5) score.textContent = "You won";
+  else if (computerScore === 5)
+    final.textContent = "You lost. The computer wins.";
 }
-
-playGame();*/

@@ -1,2 +1,2 @@
-
-	logic ,
+To display the running score : add a new div 
+Announce a winner : a while loop until human or computer scores equals 5
