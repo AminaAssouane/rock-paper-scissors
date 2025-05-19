@@ -22,6 +22,11 @@ scissors.addEventListener("click", () =>
 );
 
 function playRound(humanChoice, computerChoice) {
+  if (humanScore === 5 || computerScore === 5) {
+    humanScore = 0;
+    computerScore = 0;
+    final.textContent = "";
+  }
   if (humanChoice === "ROCK") {
     switch (computerChoice) {
       case "ROCK":
