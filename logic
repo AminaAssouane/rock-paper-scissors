@@ -1,22 +1,2 @@
-Step 2 : get the computer choice
-getComputerChoice() {
-	Initialise a variable number with Math.random
-	Check if it's rock paper or scissors depending on the number
-	return a string
-}
 
-STep 3 :
-getHumanChoice(){
-	gettign the user input with "prompt"
-}
-
-step 4 : 
-	turn the arguments into uppercase
-	write the function playRound with conditionals
-	exemple 
-	if humanchoice is rock and computer choice is rock
-	console.log("it's a tie")
-	
-
-step 6 :
-	
+	logic ,
